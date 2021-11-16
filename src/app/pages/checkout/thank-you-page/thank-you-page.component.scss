@@ -1,0 +1,19 @@
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 10%;
+    height: 40%;
+    flex-direction: column;
+    margin-top: 3rem;
+
+    .title{
+        font-size: 5rem;
+    }
+
+    .content{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+
+}
