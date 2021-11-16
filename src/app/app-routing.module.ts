@@ -5,6 +5,7 @@ import { Codes } from './pages/codes/codes.component';
 const routes: Routes = [
   { path: 'products', loadChildren: () => import('./pages/products/products.module').then(m => m.ProductsModule) },
   { path: 'checkout', loadChildren: () => import('./pages/checkout/checkout.module').then(m => m.CheckoutModule) },
+  //{path: '', redirectTo: '/products', pathMatch: 'full'}, //Linea para redirigir de la ruta Home a Products automaticamente
   {path: '**', redirectTo: '', pathMatch: 'full'}, //Las rutas deben estar en orden y poner al ultimo la ruta de error
 ];
 
